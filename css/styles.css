@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: #BA55D3;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header .logo-small {
+  height: 50px;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #FFD700;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.service-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.service-card img {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.service-card h3 {
+  color: #BA55D3;
+  font-family: "Playfair Display", serif;
+  cursor: pointer;
+}
+.service-card h3:hover {
+  color: rgb(166.0046728972, 50.3738317757, 194.6261682243);
+}
+.service-card p {
+  color: #666;
+  display: none;
+}
+.service-card:hover p {
+  display: block;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: "Roboto", sans-serif;
+}
+form button {
+  background-color: #BA55D3;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background-color: rgb(166.0046728972, 50.3738317757, 194.6261682243);
+}
+
+.small-image {
+  max-width: 300px;
+}
+
+#inicio {
+  background-color: #df61ff;
+}
+
+#nosotros {
+  background-color: #D8BFD8;
+  color: #551A8B;
+}
+
+#objetivos {
+  background-color: #FFFACD;
+  color: #8B4513;
+}
+
+#servicios {
+  background-color: #ffdbef;
+}
+
+#contacto {
+  background-color: #FFFACD;
+}
+
+/*# sourceMappingURL=styles.css.map */

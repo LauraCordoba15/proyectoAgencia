@@ -1,0 +1,198 @@
+
+// Colores
+$color-primary: #BA55D3;
+$color-secondary: #FFD700;
+$color-bg: #f9f9f9;
+$color-dark: #333;
+$color-light: #fff;
+$color-grey: #666;
+
+// Espaciados
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+
+// Tipografías
+$font-body: 'Roboto', sans-serif;
+$font-titles: 'Playfair Display', serif;
+$font-alt: 'Montserrat', sans-serif;
+
+// Tarjetas redondeadas
+@mixin card {
+  background-color: $color-light;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+// Transición suave
+@mixin smooth-transition {
+  transition: all 0.3s ease;
+}
+
+// Responsive media query
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}
+
+//RESET
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-body;
+  color: $color-dark;
+  background-color: $color-bg;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// HEADER
+header {
+  background-color: $color-primary;
+  color: $color-light;
+  padding: $spacing-md 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .logo-small {
+    height: 50px;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        display: inline-block;
+        margin: 0 $spacing-md;
+        a {
+          color: $color-light;
+          text-decoration: none;
+          font-weight: bold;
+          font-family: $font-alt;
+          @include smooth-transition;
+
+          &:hover {
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+  }
+}
+
+// MAIN
+main {
+  padding: $spacing-lg;
+  text-align: center;
+}
+
+// FOOTER
+footer {
+  background-color: $color-dark;
+  color: $color-light;
+  padding: $spacing-md 0;
+  text-align: center;
+}
+
+// Tarjeta de servicio
+.service-card {
+  @include card;
+  padding: 1.5rem;
+  text-align: center;
+  font-family: $font-alt;
+  @include smooth-transition;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    color: $color-primary;
+    font-family: $font-titles;
+    cursor: pointer;
+
+    &:hover {
+      color: darken($color-primary, 10%);
+    }
+  }
+
+  p {
+    color: $color-grey;
+    display: none;
+  }
+
+  &:hover p {
+    display: block;
+  }
+}
+
+// Formulario de contacto
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+
+  input,
+  textarea,
+  button {
+    width: 100%;
+    padding: $spacing-sm;
+    margin-bottom: $spacing-sm;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: $font-body;
+  }
+
+  button {
+    background-color: $color-primary;
+    color: $color-light;
+    font-weight: bold;
+    cursor: pointer;
+    @include smooth-transition;
+
+    &:hover {
+      background-color: darken($color-primary, 10%);
+    }
+  }
+}
+
+// Imagen reducida
+.small-image {
+  max-width: 300px;
+}
+
+// Secciones de página
+#inicio { background-color: #df61ff; }
+#nosotros { background-color: #D8BFD8; color: #551A8B; }
+#objetivos { background-color: #FFFACD; color: #8B4513; }
+#servicios { background-color: #ffdbef; }
+#contacto { background-color: #FFFACD; }
