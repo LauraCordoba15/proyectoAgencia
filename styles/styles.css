@@ -150,5 +150,5 @@ form {
 form input, form textarea, form button {
     width: 100%;
     padding: 0.75rem;
-    margin
+    margin-bottom: 1rem;
 }

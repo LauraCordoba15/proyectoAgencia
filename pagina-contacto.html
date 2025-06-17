@@ -1,10 +1,41 @@
-<section id="contacto">
-    <h2>Contáctanos</h2>
-    <form action="https://formspree.io/your-email@example.com" method="POST">
-        <input type="text" name="nombre" placeholder="Nombre" required>
-        <input type="email" name="correo" placeholder="Correo Electrónico" required>
-        <input type="text" name="asunto" placeholder="Asunto" required>
-        <textarea name="consulta" placeholder="Consulta/Mensaje" rows="4" required></textarea>
-        <button type="submit">Flash</button>
-    </form>
-</section>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Magic Flash</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="img/imgLogo.png" alt="Logo" class="logo-small">
+            <nav>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a class="text-white" href="index.html">INICIO</a></li>
+                    <li class="list-inline-item"><a class="text-white" href="pagina-nosotros.html">NOSOTROS</a></li>
+                    <li class="list-inline-item"><a class="text-white" href="pagina-objetivos.html">OBJETIVOS</a></li>
+                    <li class="list-inline-item"><a class="text-white" href="pagina-servicios.html">SERVICIOS</a></li>
+                    <li class="list-inline-item"><a class="text-white" href="pagina-contacto.html">CONTÁCTANOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container text-center py-5">
+        <h2>Contáctanos</h2>
+        <form action="https://formspree.io/your-email@example.com" method="POST" class="col-md-6 mx-auto">
+            <input type="text" name="nombre" placeholder="Nombre" required class="form-control mb-3">
+            <input type="email" name="correo" placeholder="Correo Electrónico" required class="form-control mb-3">
+            <input type="text" name="asunto" placeholder="Asunto" required class="form-control mb-3">
+            <textarea name="consulta" placeholder="Consulta/Mensaje" rows="4" required class="form-control mb-3"></textarea>
+            <button type="submit" class="btn btn-primary">Flash</button>
+        </form>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 Magic Flash. Diseñamos creatividad e innovación.</p>
+    </footer>
+</body>
+</html>
