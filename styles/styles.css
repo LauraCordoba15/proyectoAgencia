@@ -60,21 +60,21 @@ section {
     background-color: white;
 }
 
-#inicio {
+.inicio {
     background-color: #df61ff; 
 }
 
-#nosotros {
+.nosotros {
     background-color: #D8BFD8; 
     color: #551A8B; 
 }
 
-#objetivos {
+.objetivos {
     background-color: #FFFACD; 
     color: #8B4513; 
 }
 
-#servicios {
+.servicios {
     background-color: #ffdbef; 
     display: flex;
     flex-wrap: wrap;
@@ -82,7 +82,7 @@ section {
     gap: 2rem;
 }
 
-#contacto {
+.contacto {
     background-color: #FFFACD; 
 }
 

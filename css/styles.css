@@ -121,25 +121,25 @@ form button:hover {
   max-width: 300px;
 }
 
-#inicio {
+.inicio {
   background-color: #df61ff;
 }
 
-#nosotros {
+.nosotros {
   background-color: #D8BFD8;
   color: #551A8B;
 }
 
-#objetivos {
+.objetivos {
   background-color: #FFFACD;
   color: #8B4513;
 }
 
-#servicios {
+.servicios {
   background-color: #ffdbef;
 }
 
-#contacto {
+.contacto {
   background-color: #FFFACD;
 }
 
